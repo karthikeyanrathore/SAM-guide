@@ -1,5 +1,3 @@
-#!/usr/bin/env python3.8
-
 from argparse import ArgumentParser
 import dlib
 import numpy as np

@@ -47,13 +47,13 @@ mkdir SAM/test_data
 Second align the face and put the image in SAM test directory.
 
 ```bash
-./alignface.py \
+python3 alignface.py \
 --image_path test_images/1-11.jpg \
 --landmark_path shape_predictor_68_face_landmarks.dat \
 --output_path SAM/test_data
 ```
 
-5. generate aging GANs images
+6. generate aging GANs images
 
 First check if cuda is enabled or not.
 ```python
