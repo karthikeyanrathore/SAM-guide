@@ -53,3 +53,28 @@ Second align the face and put the image in SAM test directory.
 --output_path SAM/test_data
 ```
 
+5. generate aging GANs images
+
+First check if cuda is enabled or not.
+```bash
+import torch
+assert torch.cuda.is_available() == True
+```
+
+Second create output dir where the script will output the generated images.
+```bash
+mkdir SAM/output_exp
+```
+
+Third and final step is to get results.
+
+```bash
+cd SAM && python3 scripts/inference.py \
+--exp_dir=output_exp \
+--checkpoint_path=../pretrained_models/sam_ffhq_aging.pt \
+--data_path=test_data \
+--test_batch_size=4 \
+--test_workers=4 \
+--couple_outputs --target_age=0,10,20,30,40,50,60,70,80
+```
+
