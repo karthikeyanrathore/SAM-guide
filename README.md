@@ -78,3 +78,9 @@ cd SAM && python3 scripts/inference.py \
 --couple_outputs --target_age=0,10,20,30,40,50,60,70,80
 ```
 
+Additional notes to consider:
+    * Adding the flag --couple_outputs will save an additional image containing the input and output images side-by-side in the sub-directory inference_coupled. Otherwise, only the output image is saved to the sub-directory inference_results.
+    * The flag --exp_dir is the path where the images generated from the model will be saved.
+    * The flag --data_path is path to input images.
+    * The flag --checkpoint_path is path to pSp model checkpoint.
+    
