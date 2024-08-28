@@ -56,7 +56,7 @@ Second align the face and put the image in SAM test directory.
 5. generate aging GANs images
 
 First check if cuda is enabled or not.
-```bash
+```python
 import torch
 assert torch.cuda.is_available() == True
 ```
