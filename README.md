@@ -83,3 +83,5 @@ Additional notes to consider:
 * The flag --exp_dir is the path where the images generated from the model will be saved.
 * The flag --data_path is path to input images.
 * The flag --checkpoint_path is path to pSp model checkpoint.
+* The flag --target_age is the argument that can be set to generate multiple ages ranging from 0 to 100.
+* The --test_batch_size is the number of images you pass through the network together and the --test_workers is a parameter used by the dataloader (you don't need to worry about this one too much).

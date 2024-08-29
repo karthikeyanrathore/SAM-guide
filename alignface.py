@@ -134,10 +134,3 @@ if __name__ == "__main__":
     aligned_image = align_face(filepath=opts.image_path, predictor=predictor)
     aligned_image.save(f"{opts.output_path}/algined_image_{random.getrandbits(12)}.png")
 
-
-
-
-# ./alignface.py \
-# --image_path test_images/1-11.jpg \
-# --landmark_path shape_predictor_68_face_landmarks.dat \
-# --output_path SAM/test_data
